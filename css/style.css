@@ -1,0 +1,130 @@
+/* Global
+---------------------------------*/
+:root {
+	--main-border-radius: 8px;
+	--btn-color: #252629;
+
+	--color-white: #ffffff;
+
+	--blue-tint: #1939f6;
+	--black-tint: #191b1e;
+}
+
+body {
+	font-family: 'Oxygen Mono', monospace;
+	font-size: 24px;
+}
+.blue {
+	background-color: var(--blue-tint);
+	color: var(--color-white);
+}
+
+
+/* Calculator Section
+---------------------------------*/
+#section-calculator {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#calculator-container {
+	width: 300px;
+	height: 540px;
+	background-color: var(--black-tint);
+	border-radius: var(--main-border-radius);
+}
+
+#screen-container {
+	width: 100%;
+	height: 38%;
+	display: flex;
+	flex-direction: column;
+}
+#result {
+	width: calc(100% - 15px);
+	height: 50%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-size: 40px;
+	color: var(--blue-tint);
+}
+#calculation {
+	width: calc(100% - 15px);
+	height: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#numbers-container {
+	width: 100%;
+	height: 62%;
+}
+
+#operations-container {
+	position: absolute;
+	height: 250px;
+	width: 50px;
+	margin-top: -75px;
+	margin-left: 325px;
+	display: flex;
+	flex-direction: row;
+}
+
+.row {
+	width: 100%;
+	height: 25%;	
+	display: flex;
+	flex-direction: row;
+}
+.column {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 0.5px;
+}
+
+.btn {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.operation {
+	background-color: var(--color-white);
+	color: var(--blue-tint);
+}
+.number {
+	background-color: var(--btn-color);
+	border: 0.5px solid var(--black-tint);
+}
+.clear {
+	font-size: 18px;
+	background-color: var(--btn-color);
+	color: var(--color-white);
+}
+.backspace {
+	font-size: 20px;
+}
+
+.top-left {
+	border-top-left-radius: var(--main-border-radius);
+}
+.top-right {
+	border-top-right-radius: var(--main-border-radius);
+}
+
+.bottom-left {
+	border-bottom-left-radius: var(--main-border-radius);
+}
+.bottom-right {
+	border-bottom-right-radius: var(--main-border-radius);
+}
+
+[v-cloak] { display: none; }

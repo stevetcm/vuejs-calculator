@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>VueJS Calculator</title>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen+Mono">
+
+    	<!-- ahead of BODY to allow syntax cloaking -->
+    	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+
+	<body>
+		<section>
+			<div id="section-calculator" class="blue">
+
+				<div id="calculator-container">
+
+					<div id="screen-container">
+						<div id="result" v-cloak>{{ tempResult | hugeNumber }}</div>
+
+						<div id="calculation" v-cloak>{{ calculation | modified }}</div>
+					</div>
+
+					<div id="operations-container">
+						<div class="column">
+							<div class="btn operation clear top-left" @click="clear()">AC</div>
+							<div class="btn operation" @click="append(' / ')">÷</div>
+							<div class="btn operation" @click="append(' * ')">×</div>
+							<div class="btn operation" @click="append(' - ')">-</div>
+							<div class="btn operation" @click="append(' + ')">+</div>
+							<div class="btn operation backspace bottom-right" @click="backspace()">⌫</div>
+						</div>
+					</div>
+
+					<div id="numbers-container">
+						<div class="row">
+							<div class="btn number" @click="append('7')">7</div>
+							<div class="btn number" @click="append('8')">8</div>
+							<div class="btn number" @click="append('9')">9</div>
+						</div>
+						<div class="row">
+							<div class="btn number" @click="append('4')">4</div>
+							<div class="btn number" @click="append('5')">5</div>
+							<div class="btn number" @click="append('6')">6</div>
+						</div>
+						<div class="row">
+							<div class="btn number" @click="append('1')">1</div>
+							<div class="btn number" @click="append('2')">2</div>
+							<div class="btn number" @click="append('3')">3</div>
+						</div>
+						<div class="row">
+							<div class="btn number bottom-left" @click="append('.')">.</div>
+							<div class="btn number" @click="append('0')">0</div>
+							<div class="btn number bottom-right" @click="getResult()">=</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
