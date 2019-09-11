@@ -2,7 +2,10 @@ new Vue({
 	el: '#section-calculator',
 	data: {
 		calculation: '0',
-		tempResult: ''
+		tempResult: '',
+		resultStyle: {
+			fontSize: '40px'
+		}
 	},
 	methods: {
 		clear() {
@@ -40,6 +43,19 @@ new Vue({
 				this.tempResult = this.result.toString();
 			} else if (!this.calculation.includes(' ')) {
 				this.tempResult = '';
+			}
+		},
+		tempResult() {
+			if (this.tempResult.length > 18) {
+				this.resultStyle.fontSize = '17px';
+			} else if (this.tempResult.length > 15) {
+				this.resultStyle.fontSize = '20px';
+			} else if (this.tempResult.length > 12) {
+				this.resultStyle.fontSize = '24px';
+			} else if (this.tempResult.length > 9) {
+				this.resultStyle.fontSize = '30px';
+			} else {
+				this.resultStyle.fontSize = '40px';
 			}
 		}
 	},
