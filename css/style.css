@@ -49,14 +49,16 @@ body {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
-	font-size: 40px;
 	color: var(--blue-tint);
 }
 #calculation {
 	width: calc(100% - 15px);
-	height: 50%;
-	display: flex;
-	justify-content: flex-end;
+	height: 30%;
+	overflow-x: auto;
+	white-space: nowrap;
+	display: inline-block;
+	margin: auto;
+	text-align: right;
 }
 
 #numbers-container {
