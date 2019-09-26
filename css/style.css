@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family: 'Oxygen Mono', monospace;
+	font-family: 'Share Tech Mono', monospace;
 	font-size: 24px;
 }
 .blue {
@@ -116,7 +116,7 @@ body {
 	color: var(--color-white);
 }
 .backspace {
-	font-size: 20px;
+	font-size: 18px;
 	border-bottom: 0.5px solid var(--black-tint);
 }
 
