@@ -46,14 +46,14 @@ new Vue({
 			}
 		},
 		tempResult() {
-			if (this.tempResult.length > 18) {
-				this.resultStyle.fontSize = '17px';
-			} else if (this.tempResult.length > 15) {
-				this.resultStyle.fontSize = '20px';
-			} else if (this.tempResult.length > 12) {
-				this.resultStyle.fontSize = '24px';
-			} else if (this.tempResult.length > 9) {
-				this.resultStyle.fontSize = '30px';
+			if (this.tempResult.length > 19) {
+				this.resultStyle.fontSize = '18px';
+			} else if (this.tempResult.length > 16) {
+				this.resultStyle.fontSize = '21px';
+			} else if (this.tempResult.length > 13) {
+				this.resultStyle.fontSize = '25px';
+			} else if (this.tempResult.length > 10) {
+				this.resultStyle.fontSize = '31px';
 			} else {
 				this.resultStyle.fontSize = '40px';
 			}
