@@ -16,7 +16,7 @@ body {
 	font-family: 'Share Tech Mono', monospace;
 	font-size: 24px;
 }
-.blue {
+.white {
 	background-color: var(--white-tint);
 	color: var(--color-white);
 }
@@ -118,6 +118,19 @@ body {
 .backspace {
 	font-size: 18px;
 	border-bottom: 0.5px solid var(--black-tint);
+}
+
+.project-button-div {
+	display: inline-block;
+  	color: var(--black-tint);
+  	font-size: 12px;
+	margin-top: 15px;
+	padding: 2px 6px 6px 5px;
+}
+.project-button-div img {
+	width: 15px;
+	height: 15px;
+  	transform: translate(10%, 20%);
 }
 
 .top-left {
